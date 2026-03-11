@@ -1,19 +1,20 @@
 import "./App.css";
+import Employee from "./componets/Employee";
 
 function App() {
+  console.log("We are about to list the employee");
+  const showEmployees = false;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <p>Hello!</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {showEmployees ? (
+        <>
+          <Employee />
+          <p>Hello!</p>
+        </>
+      ) : (
+        <p> You cannot see the employee</p>
+      )}
     </div>
   );
 }
