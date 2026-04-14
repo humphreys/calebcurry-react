@@ -22,6 +22,11 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --radius-xl: 0.75rem;
+    --color-red-300: oklch(80.8% 0.114 19.571);
+    --color-yellow-300: oklch(90.5% 0.182 98.111);
+    --color-green-300: oklch(87.1% 0.15 154.449);
+    --color-blue-300: oklch(80.9% 0.105 251.813);
+    --spacing: 0.25rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -276,6 +281,9 @@
       margin-block-end: calc(calc(var(--spacing) * 0.5) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
+  .start {
+    inset-inline-start: var(--spacing);
+  }
   .space-y-2 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -456,6 +464,20 @@
     @container (width >= 24rem) {
       padding-block: calc(var(--spacing) * 4);
     }
+  .bg-blue-300 {
+    background-color: var(--color-blue-300);
+  }
+  .bg-green-300 {
+    background-color: var(--color-green-300);
+  }
+  .bg-red-300 {
+    background-color: var(--color-red-300);
+  }
+  .bg-yellow-300 {
+    background-color: var(--color-yellow-300);
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
   }
 }
 @property --tw-space-y-reverse {

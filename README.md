@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+npx @tailwindcss/cli -i ./src/input.css -o ./public/output.css --watch
+
 ## Available Scripts
 
 In the project directory, you can run:
