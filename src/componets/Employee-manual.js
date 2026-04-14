@@ -15,7 +15,7 @@ function Employee(props) {
             <p className="font-medium text-gray-500">{props.role}</p>
           </div>
           <button className="rounded-full border border-purple-200 px-4 py-1.5 text-sm font-medium text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700">
-            Update
+            Message
           </button>
         </div>
       </div>
