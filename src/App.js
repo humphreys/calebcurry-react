@@ -10,7 +10,7 @@ function App() {
   const showEmployees = true;
 
   return (
-    <div className="App">
+    <div className="App ">
       {showEmployees ? (
         <>
           <input
